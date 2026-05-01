@@ -1,3 +1,4 @@
+import { resolve } from 'node:path'
 import { Env } from '@rudderjs/core'
 import { PrismaClient } from '../prisma/generated/prisma/client.js'
 
@@ -13,6 +14,14 @@ import { PrismaClient } from '../prisma/generated/prisma/client.js'
 //
 // Run `pnpm exec prisma generate` after schema changes to regenerate the
 // client at the configured output path.
+//
+// libSQL's `file:` URL parser doesn't always resolve `./` relative paths
+// the same way SQLite does — it failed with SQLITE_CANTOPEN inside
+// WebContainer/StackBlitz. Resolve to an absolute path against process.cwd()
+// (project root, since dev/build are launched from there) so the form is
+// unambiguous on every platform.
+
+const dbPath = resolve(process.cwd(), 'prisma/dev.db')
 
 export default {
   default: Env.get('DB_CONNECTION', 'libsql'),
@@ -22,12 +31,12 @@ export default {
   connections: {
     libsql: {
       driver: 'libsql' as const,
-      url:    Env.get('DATABASE_URL', 'file:./prisma/dev.db'),
+      url:    Env.get('DATABASE_URL', `file:${dbPath}`),
     },
 
     sqlite: {
       driver: 'sqlite' as const,
-      url:    Env.get('DATABASE_URL', 'file:./dev.db'),
+      url:    Env.get('DATABASE_URL', `file:${dbPath}`),
     },
 
     postgresql: {
