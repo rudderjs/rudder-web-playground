@@ -52,7 +52,7 @@
     "@rudderjs/server-hono": "^1.0.0",
     "@rudderjs/session": "^1.0.1",
     "@rudderjs/storage": "^1.0.0",
-    "@rudderjs/support": "^1.0.0",
+    "@rudderjs/support": "^1.1.0",
     "@rudderjs/telescope": "^10.0.0",
     "@rudderjs/view": "^1.0.0",
     "@rudderjs/vite": "^0.0.7",

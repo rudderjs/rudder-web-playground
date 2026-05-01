@@ -1,7 +1,7 @@
 import { readFileSync } from 'node:fs'
 import { resolve } from 'node:path'
 import { ServiceProvider } from '@rudderjs/core'
-import { isWebContainer } from '../../src/runtime/webcontainer.js'
+import { isWebContainer } from '@rudderjs/support'
 
 // In WebContainer the libSQL adapter swaps to a WASM build whose Emscripten
 // FS can't see host files. We default the URL to `:memory:` (see

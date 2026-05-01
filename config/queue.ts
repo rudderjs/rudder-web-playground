@@ -1,5 +1,5 @@
 import { Env } from '@rudderjs/core'
-import { isWebContainer } from '../src/runtime/webcontainer.js'
+import { isWebContainer } from '@rudderjs/support'
 import type { QueueConfig } from '@rudderjs/queue'
 import { WelcomeUserJob } from '../app/Jobs/WelcomeUserJob.js'
 

@@ -1,5 +1,5 @@
 import { Env } from '@rudderjs/core'
-import { isWebContainer } from '../src/runtime/webcontainer.js'
+import { isWebContainer } from '@rudderjs/support'
 import type { SessionConfig } from '@rudderjs/session'
 
 // In WebContainer, raw Redis (TCP) doesn't work — pin the session driver to

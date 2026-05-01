@@ -1,5 +1,5 @@
 import { Env } from '@rudderjs/core'
-import { isWebContainer } from '../src/runtime/webcontainer.js'
+import { isWebContainer } from '@rudderjs/support'
 
 // In WebContainer, raw SMTP (TCP) doesn't work — fall back to the log driver
 // (writes the rendered email to stdout instead of sending).

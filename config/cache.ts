@@ -1,5 +1,5 @@
 import { Env } from '@rudderjs/core'
-import { isWebContainer } from '../src/runtime/webcontainer.js'
+import { isWebContainer } from '@rudderjs/support'
 import type { CacheConfig } from '@rudderjs/cache'
 
 // In WebContainer, native Redis (raw TCP) doesn't work — fall back to memory.

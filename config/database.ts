@@ -1,7 +1,7 @@
 import { resolve } from 'node:path'
 import { Env } from '@rudderjs/core'
 import { PrismaClient } from '../prisma/generated/prisma/client.js'
-import { isWebContainer } from '../src/runtime/webcontainer.js'
+import { isWebContainer } from '@rudderjs/support'
 
 // Uses Prisma's libSQL driver adapter (via @prisma/adapter-libsql +
 // @libsql/client) instead of better-sqlite3. The libSQL adapter is pure JS,
