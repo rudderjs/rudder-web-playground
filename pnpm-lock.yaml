@@ -30,8 +30,8 @@ importers:
         specifier: ^1.0.0
         version: 1.0.0(@aws-crypto/sha256-js@5.2.0)(@modelcontextprotocol/sdk@1.29.0(zod@4.4.1))(@rudderjs/core@1.0.0)(@smithy/protocol-http@5.3.14)(@smithy/signature-v4@5.3.14)(ws@8.20.0)
       '@rudderjs/auth':
-        specifier: ^4.0.0
-        version: 4.0.0(@rudderjs/hash@1.0.0)(@rudderjs/router@1.0.0)(@rudderjs/session@1.0.0)(@rudderjs/view@1.0.0(vike@0.4.258(hono@4.12.16)(react-streaming@0.4.17(react-dom@19.2.5(react@19.2.5))(react@19.2.5))(srvx@0.11.15)(vite@7.3.2(@types/node@20.19.39)(jiti@2.6.1)(lightningcss@1.32.0)(tsx@4.21.0))))
+        specifier: ^4.0.1
+        version: 4.0.1(@rudderjs/hash@1.0.0)(@rudderjs/router@1.0.0)(@rudderjs/session@1.0.1)(@rudderjs/view@1.0.0(vike@0.4.258(hono@4.12.16)(react-streaming@0.4.17(react-dom@19.2.5(react@19.2.5))(react@19.2.5))(srvx@0.11.15)(vite@7.3.2(@types/node@20.19.39)(jiti@2.6.1)(lightningcss@1.32.0)(tsx@4.21.0))))
       '@rudderjs/boost':
         specifier: ^1.0.0
         version: 1.0.0
@@ -40,7 +40,7 @@ importers:
         version: 1.0.0
       '@rudderjs/cashier-paddle':
         specifier: ^2.0.0
-        version: 2.0.0(@rudderjs/auth@4.0.0(@rudderjs/hash@1.0.0)(@rudderjs/router@1.0.0)(@rudderjs/session@1.0.0)(@rudderjs/view@1.0.0(vike@0.4.258(hono@4.12.16)(react-streaming@0.4.17(react-dom@19.2.5(react@19.2.5))(react@19.2.5))(srvx@0.11.15)(vite@7.3.2(@types/node@20.19.39)(jiti@2.6.1)(lightningcss@1.32.0)(tsx@4.21.0)))))(@rudderjs/router@1.0.0)(@rudderjs/view@1.0.0(vike@0.4.258(hono@4.12.16)(react-streaming@0.4.17(react-dom@19.2.5(react@19.2.5))(react@19.2.5))(srvx@0.11.15)(vite@7.3.2(@types/node@20.19.39)(jiti@2.6.1)(lightningcss@1.32.0)(tsx@4.21.0))))
+        version: 2.0.0(@rudderjs/auth@4.0.1(@rudderjs/hash@1.0.0)(@rudderjs/router@1.0.0)(@rudderjs/session@1.0.1)(@rudderjs/view@1.0.0(vike@0.4.258(hono@4.12.16)(react-streaming@0.4.17(react-dom@19.2.5(react@19.2.5))(react@19.2.5))(srvx@0.11.15)(vite@7.3.2(@types/node@20.19.39)(jiti@2.6.1)(lightningcss@1.32.0)(tsx@4.21.0)))))(@rudderjs/router@1.0.0)(@rudderjs/view@1.0.0(vike@0.4.258(hono@4.12.16)(react-streaming@0.4.17(react-dom@19.2.5(react@19.2.5))(react@19.2.5))(srvx@0.11.15)(vite@7.3.2(@types/node@20.19.39)(jiti@2.6.1)(lightningcss@1.32.0)(tsx@4.21.0))))
       '@rudderjs/console':
         specifier: ^0.0.4
         version: 0.0.4
@@ -105,8 +105,8 @@ importers:
         specifier: ^1.0.0
         version: 1.0.0(srvx@0.11.15)(vike@0.4.258(hono@4.12.16)(react-streaming@0.4.17(react-dom@19.2.5(react@19.2.5))(react@19.2.5))(srvx@0.11.15)(vite@7.3.2(@types/node@20.19.39)(jiti@2.6.1)(lightningcss@1.32.0)(tsx@4.21.0)))
       '@rudderjs/session':
-        specifier: ^1.0.0
-        version: 1.0.0
+        specifier: ^1.0.1
+        version: 1.0.1
       '@rudderjs/storage':
         specifier: ^1.0.0
         version: 1.0.0
@@ -115,7 +115,7 @@ importers:
         version: 1.0.0
       '@rudderjs/telescope':
         specifier: ^10.0.0
-        version: 10.0.0(@rudderjs/ai@1.0.0(@aws-crypto/sha256-js@5.2.0)(@modelcontextprotocol/sdk@1.29.0(zod@4.4.1))(@rudderjs/core@1.0.0)(@smithy/protocol-http@5.3.14)(@smithy/signature-v4@5.3.14)(ws@8.20.0))(@rudderjs/auth@4.0.0(@rudderjs/hash@1.0.0)(@rudderjs/router@1.0.0)(@rudderjs/session@1.0.0)(@rudderjs/view@1.0.0(vike@0.4.258(hono@4.12.16)(react-streaming@0.4.17(react-dom@19.2.5(react@19.2.5))(react@19.2.5))(srvx@0.11.15)(vite@7.3.2(@types/node@20.19.39)(jiti@2.6.1)(lightningcss@1.32.0)(tsx@4.21.0)))))(@rudderjs/cache@1.0.0)(@rudderjs/console@0.0.4)(@rudderjs/http@0.0.2)(@rudderjs/log@1.0.0)(@rudderjs/mail@1.0.0)(@rudderjs/mcp@4.0.0(@rudderjs/console@0.0.4)(@rudderjs/router@1.0.0))(@rudderjs/middleware@1.0.0)(@rudderjs/notification@1.0.0)(@rudderjs/orm@1.3.0)(@rudderjs/queue@4.0.0(@rudderjs/router@1.0.0))(@rudderjs/router@1.0.0)(@rudderjs/schedule@1.0.0)
+        version: 10.0.0(@rudderjs/ai@1.0.0(@aws-crypto/sha256-js@5.2.0)(@modelcontextprotocol/sdk@1.29.0(zod@4.4.1))(@rudderjs/core@1.0.0)(@smithy/protocol-http@5.3.14)(@smithy/signature-v4@5.3.14)(ws@8.20.0))(@rudderjs/auth@4.0.1(@rudderjs/hash@1.0.0)(@rudderjs/router@1.0.0)(@rudderjs/session@1.0.1)(@rudderjs/view@1.0.0(vike@0.4.258(hono@4.12.16)(react-streaming@0.4.17(react-dom@19.2.5(react@19.2.5))(react@19.2.5))(srvx@0.11.15)(vite@7.3.2(@types/node@20.19.39)(jiti@2.6.1)(lightningcss@1.32.0)(tsx@4.21.0)))))(@rudderjs/cache@1.0.0)(@rudderjs/console@0.0.4)(@rudderjs/http@0.0.2)(@rudderjs/log@1.0.0)(@rudderjs/mail@1.0.0)(@rudderjs/mcp@4.0.0(@rudderjs/console@0.0.4)(@rudderjs/router@1.0.0))(@rudderjs/middleware@1.0.0)(@rudderjs/notification@1.0.0)(@rudderjs/orm@1.3.0)(@rudderjs/queue@4.0.0(@rudderjs/router@1.0.0))(@rudderjs/router@1.0.0)(@rudderjs/schedule@1.0.0)
       '@rudderjs/view':
         specifier: ^1.0.0
         version: 1.0.0(vike@0.4.258(hono@4.12.16)(react-streaming@0.4.17(react-dom@19.2.5(react@19.2.5))(react@19.2.5))(srvx@0.11.15)(vite@7.3.2(@types/node@20.19.39)(jiti@2.6.1)(lightningcss@1.32.0)(tsx@4.21.0)))
@@ -2221,12 +2221,12 @@ packages:
       '@rudderjs/core':
         optional: true
 
-  '@rudderjs/auth@4.0.0':
-    resolution: {integrity: sha512-8aYFEZDD7gVPoDKNnBedbtU8wh4z3bqM43oeriz8ccSsnoHoHH8uEnqeuLJibZcURuyo9KIFzan+c2/oS685rQ==}
+  '@rudderjs/auth@4.0.1':
+    resolution: {integrity: sha512-Km7sGtArkp15AYbnzEFDywfJF28cfprqbPrr3IgjQTyqrKrVrJf5wDHWe/zbJbZwPkIGt4FTR7seMblE3ezXgw==}
     peerDependencies:
       '@rudderjs/hash': ^1.0.0
       '@rudderjs/router': ^1.0.0
-      '@rudderjs/session': ^1.0.0
+      '@rudderjs/session': ^1.0.1
       '@rudderjs/view': ^1.0.0
 
   '@rudderjs/boost@1.0.0':
@@ -2362,8 +2362,8 @@ packages:
   '@rudderjs/server-hono@1.0.0':
     resolution: {integrity: sha512-nwq2xDB4Y4BDcw9I6oMd2/2bofYJD0RfEMBZtrxvIoh6mZpQDTHLR4+7WfLi0UEegiO8B1+wXd7dkrGQjmGQFA==}
 
-  '@rudderjs/session@1.0.0':
-    resolution: {integrity: sha512-rHSM7UXy3tPXCBOwz6EmPhYSQlXqxHSlDRmyJnaQJhxsVV7ZNxdvUa/B+Oi96PnxbE8sUTLNAdpS2Hmqah4dEw==}
+  '@rudderjs/session@1.0.1':
+    resolution: {integrity: sha512-5XOsXZEiGYlF1Mai4AbYQd3x+RC/EzdWAkUE8ET7m66l2Kg3veXLcu7Ktjayhv+cGJ3KEP5HzEl9V9c8Kg0t2g==}
 
   '@rudderjs/storage@1.0.0':
     resolution: {integrity: sha512-dH1ONVnEOZppIgoeWPr2T+J/YiqbIyWqu66mPrsEIdZPIi7pUtxi3gSmRkjQfVKZmSdYQwIBElwt5JEVv53clQ==}
@@ -7259,13 +7259,13 @@ snapshots:
       - utf-8-validate
       - ws
 
-  '@rudderjs/auth@4.0.0(@rudderjs/hash@1.0.0)(@rudderjs/router@1.0.0)(@rudderjs/session@1.0.0)(@rudderjs/view@1.0.0(vike@0.4.258(hono@4.12.16)(react-streaming@0.4.17(react-dom@19.2.5(react@19.2.5))(react@19.2.5))(srvx@0.11.15)(vite@7.3.2(@types/node@20.19.39)(jiti@2.6.1)(lightningcss@1.32.0)(tsx@4.21.0))))':
+  '@rudderjs/auth@4.0.1(@rudderjs/hash@1.0.0)(@rudderjs/router@1.0.0)(@rudderjs/session@1.0.1)(@rudderjs/view@1.0.0(vike@0.4.258(hono@4.12.16)(react-streaming@0.4.17(react-dom@19.2.5(react@19.2.5))(react@19.2.5))(srvx@0.11.15)(vite@7.3.2(@types/node@20.19.39)(jiti@2.6.1)(lightningcss@1.32.0)(tsx@4.21.0))))':
     dependencies:
       '@rudderjs/contracts': 1.1.0
       '@rudderjs/core': 1.0.0
       '@rudderjs/hash': 1.0.0
       '@rudderjs/router': 1.0.0
-      '@rudderjs/session': 1.0.0
+      '@rudderjs/session': 1.0.1
       '@rudderjs/view': 1.0.0(vike@0.4.258(hono@4.12.16)(react-streaming@0.4.17(react-dom@19.2.5(react@19.2.5))(react@19.2.5))(srvx@0.11.15)(vite@7.3.2(@types/node@20.19.39)(jiti@2.6.1)(lightningcss@1.32.0)(tsx@4.21.0)))
 
   '@rudderjs/boost@1.0.0':
@@ -7285,9 +7285,9 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@rudderjs/cashier-paddle@2.0.0(@rudderjs/auth@4.0.0(@rudderjs/hash@1.0.0)(@rudderjs/router@1.0.0)(@rudderjs/session@1.0.0)(@rudderjs/view@1.0.0(vike@0.4.258(hono@4.12.16)(react-streaming@0.4.17(react-dom@19.2.5(react@19.2.5))(react@19.2.5))(srvx@0.11.15)(vite@7.3.2(@types/node@20.19.39)(jiti@2.6.1)(lightningcss@1.32.0)(tsx@4.21.0)))))(@rudderjs/router@1.0.0)(@rudderjs/view@1.0.0(vike@0.4.258(hono@4.12.16)(react-streaming@0.4.17(react-dom@19.2.5(react@19.2.5))(react@19.2.5))(srvx@0.11.15)(vite@7.3.2(@types/node@20.19.39)(jiti@2.6.1)(lightningcss@1.32.0)(tsx@4.21.0))))':
+  '@rudderjs/cashier-paddle@2.0.0(@rudderjs/auth@4.0.1(@rudderjs/hash@1.0.0)(@rudderjs/router@1.0.0)(@rudderjs/session@1.0.1)(@rudderjs/view@1.0.0(vike@0.4.258(hono@4.12.16)(react-streaming@0.4.17(react-dom@19.2.5(react@19.2.5))(react@19.2.5))(srvx@0.11.15)(vite@7.3.2(@types/node@20.19.39)(jiti@2.6.1)(lightningcss@1.32.0)(tsx@4.21.0)))))(@rudderjs/router@1.0.0)(@rudderjs/view@1.0.0(vike@0.4.258(hono@4.12.16)(react-streaming@0.4.17(react-dom@19.2.5(react@19.2.5))(react@19.2.5))(srvx@0.11.15)(vite@7.3.2(@types/node@20.19.39)(jiti@2.6.1)(lightningcss@1.32.0)(tsx@4.21.0))))':
     dependencies:
-      '@rudderjs/auth': 4.0.0(@rudderjs/hash@1.0.0)(@rudderjs/router@1.0.0)(@rudderjs/session@1.0.0)(@rudderjs/view@1.0.0(vike@0.4.258(hono@4.12.16)(react-streaming@0.4.17(react-dom@19.2.5(react@19.2.5))(react@19.2.5))(srvx@0.11.15)(vite@7.3.2(@types/node@20.19.39)(jiti@2.6.1)(lightningcss@1.32.0)(tsx@4.21.0))))
+      '@rudderjs/auth': 4.0.1(@rudderjs/hash@1.0.0)(@rudderjs/router@1.0.0)(@rudderjs/session@1.0.1)(@rudderjs/view@1.0.0(vike@0.4.258(hono@4.12.16)(react-streaming@0.4.17(react-dom@19.2.5(react@19.2.5))(react@19.2.5))(srvx@0.11.15)(vite@7.3.2(@types/node@20.19.39)(jiti@2.6.1)(lightningcss@1.32.0)(tsx@4.21.0))))
       '@rudderjs/contracts': 1.1.0
       '@rudderjs/core': 1.0.0
       '@rudderjs/orm': 1.3.0
@@ -7458,7 +7458,7 @@ snapshots:
       - srvx
       - vike
 
-  '@rudderjs/session@1.0.0':
+  '@rudderjs/session@1.0.1':
     dependencies:
       '@rudderjs/contracts': 1.1.0
       '@rudderjs/core': 1.0.0
@@ -7479,7 +7479,7 @@ snapshots:
     dependencies:
       zod: 4.4.1
 
-  '@rudderjs/telescope@10.0.0(@rudderjs/ai@1.0.0(@aws-crypto/sha256-js@5.2.0)(@modelcontextprotocol/sdk@1.29.0(zod@4.4.1))(@rudderjs/core@1.0.0)(@smithy/protocol-http@5.3.14)(@smithy/signature-v4@5.3.14)(ws@8.20.0))(@rudderjs/auth@4.0.0(@rudderjs/hash@1.0.0)(@rudderjs/router@1.0.0)(@rudderjs/session@1.0.0)(@rudderjs/view@1.0.0(vike@0.4.258(hono@4.12.16)(react-streaming@0.4.17(react-dom@19.2.5(react@19.2.5))(react@19.2.5))(srvx@0.11.15)(vite@7.3.2(@types/node@20.19.39)(jiti@2.6.1)(lightningcss@1.32.0)(tsx@4.21.0)))))(@rudderjs/cache@1.0.0)(@rudderjs/console@0.0.4)(@rudderjs/http@0.0.2)(@rudderjs/log@1.0.0)(@rudderjs/mail@1.0.0)(@rudderjs/mcp@4.0.0(@rudderjs/console@0.0.4)(@rudderjs/router@1.0.0))(@rudderjs/middleware@1.0.0)(@rudderjs/notification@1.0.0)(@rudderjs/orm@1.3.0)(@rudderjs/queue@4.0.0(@rudderjs/router@1.0.0))(@rudderjs/router@1.0.0)(@rudderjs/schedule@1.0.0)':
+  '@rudderjs/telescope@10.0.0(@rudderjs/ai@1.0.0(@aws-crypto/sha256-js@5.2.0)(@modelcontextprotocol/sdk@1.29.0(zod@4.4.1))(@rudderjs/core@1.0.0)(@smithy/protocol-http@5.3.14)(@smithy/signature-v4@5.3.14)(ws@8.20.0))(@rudderjs/auth@4.0.1(@rudderjs/hash@1.0.0)(@rudderjs/router@1.0.0)(@rudderjs/session@1.0.1)(@rudderjs/view@1.0.0(vike@0.4.258(hono@4.12.16)(react-streaming@0.4.17(react-dom@19.2.5(react@19.2.5))(react@19.2.5))(srvx@0.11.15)(vite@7.3.2(@types/node@20.19.39)(jiti@2.6.1)(lightningcss@1.32.0)(tsx@4.21.0)))))(@rudderjs/cache@1.0.0)(@rudderjs/console@0.0.4)(@rudderjs/http@0.0.2)(@rudderjs/log@1.0.0)(@rudderjs/mail@1.0.0)(@rudderjs/mcp@4.0.0(@rudderjs/console@0.0.4)(@rudderjs/router@1.0.0))(@rudderjs/middleware@1.0.0)(@rudderjs/notification@1.0.0)(@rudderjs/orm@1.3.0)(@rudderjs/queue@4.0.0(@rudderjs/router@1.0.0))(@rudderjs/router@1.0.0)(@rudderjs/schedule@1.0.0)':
     dependencies:
       '@rudderjs/contracts': 1.1.0
       '@rudderjs/core': 1.0.0
@@ -7487,7 +7487,7 @@ snapshots:
       '@rudderjs/router': 1.0.0
     optionalDependencies:
       '@rudderjs/ai': 1.0.0(@aws-crypto/sha256-js@5.2.0)(@modelcontextprotocol/sdk@1.29.0(zod@4.4.1))(@rudderjs/core@1.0.0)(@smithy/protocol-http@5.3.14)(@smithy/signature-v4@5.3.14)(ws@8.20.0)
-      '@rudderjs/auth': 4.0.0(@rudderjs/hash@1.0.0)(@rudderjs/router@1.0.0)(@rudderjs/session@1.0.0)(@rudderjs/view@1.0.0(vike@0.4.258(hono@4.12.16)(react-streaming@0.4.17(react-dom@19.2.5(react@19.2.5))(react@19.2.5))(srvx@0.11.15)(vite@7.3.2(@types/node@20.19.39)(jiti@2.6.1)(lightningcss@1.32.0)(tsx@4.21.0))))
+      '@rudderjs/auth': 4.0.1(@rudderjs/hash@1.0.0)(@rudderjs/router@1.0.0)(@rudderjs/session@1.0.1)(@rudderjs/view@1.0.0(vike@0.4.258(hono@4.12.16)(react-streaming@0.4.17(react-dom@19.2.5(react@19.2.5))(react@19.2.5))(srvx@0.11.15)(vite@7.3.2(@types/node@20.19.39)(jiti@2.6.1)(lightningcss@1.32.0)(tsx@4.21.0))))
       '@rudderjs/cache': 1.0.0
       '@rudderjs/console': 0.0.4
       '@rudderjs/http': 0.0.2
