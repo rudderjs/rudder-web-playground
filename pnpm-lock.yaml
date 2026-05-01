@@ -84,8 +84,8 @@ importers:
         specifier: ^1.3.0
         version: 1.3.0
       '@rudderjs/orm-prisma':
-        specifier: ^1.1.0
-        version: 1.1.0(@prisma/client@7.8.0(prisma@7.8.0(@types/react-dom@19.2.3(@types/react@19.2.14))(@types/react@19.2.14)(better-sqlite3@12.9.0)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)(typescript@5.9.3))(typescript@5.9.3))
+        specifier: ^1.2.0
+        version: 1.2.0(@prisma/client@7.8.0(prisma@7.8.0(@types/react-dom@19.2.3(@types/react@19.2.14))(@types/react@19.2.14)(better-sqlite3@12.9.0)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)(typescript@5.9.3))(typescript@5.9.3))
       '@rudderjs/passport':
         specifier: ^1.0.0
         version: 1.0.0
@@ -1158,14 +1158,8 @@ packages:
   '@kurkle/color@0.3.4':
     resolution: {integrity: sha512-M5UknZPHRu3DEDWoipU6sE8PdkZ6Z/S+v4dD+Ke8IaNlpdSQah50lz1KtcFBa2vsdOnwbbnxJwVM4wty6udA5w==}
 
-  '@libsql/client@0.15.15':
-    resolution: {integrity: sha512-twC0hQxPNHPKfeOv3sNT6u2pturQjLcI+CnpTM0SjRpocEGgfiZ7DWKXLNnsothjyJmDqEsBQJ5ztq9Wlu470w==}
-
   '@libsql/client@0.17.3':
     resolution: {integrity: sha512-HXk9wiAoJbKFbyBH4O+aEhN6ir5ERXuXvwE5OD2eR4/5RUa3Pw/8L9zrnVdU+iNJitRvisPWaIwmhkO3bH7giA==}
-
-  '@libsql/core@0.15.15':
-    resolution: {integrity: sha512-C88Z6UKl+OyuKKPwz224riz02ih/zHYI3Ho/LAcVOgjsunIRZoBw7fjRfaH9oPMmSNeQfhGklSG2il1URoOIsA==}
 
   '@libsql/core@0.17.3':
     resolution: {integrity: sha512-2UjK1i7JBkMduJo4WdvvBxMMvVJ31pArBZNONyz/GCJJAH+1UHat2X6vn10S/WpY5fKzIT98WqYFl2vzWRLOfg==}
@@ -1182,13 +1176,6 @@ packages:
 
   '@libsql/hrana-client@0.10.0':
     resolution: {integrity: sha512-OoA4EMqRAC7kn7V2P6EQqRcpZf2W+AjsNIyCizBg339Tq/aMC7sRnzs3SklderhmQWAqEzvv8A2vhxVmWpkVvw==}
-
-  '@libsql/hrana-client@0.7.0':
-    resolution: {integrity: sha512-OF8fFQSkbL7vJY9rfuegK1R7sPgQ6kFMkDamiEccNUvieQ+3urzfDFI616oPl8V7T9zRmnTkSjMOImYCAVRVuw==}
-
-  '@libsql/isomorphic-fetch@0.3.1':
-    resolution: {integrity: sha512-6kK3SUK5Uu56zPq/Las620n5aS9xJq+jMBcNSOmjhNf/MUvdyji4vrMTqD7ptY7/4/CAVEAYDeotUz60LNQHtw==}
-    engines: {node: '>=18.0.0'}
 
   '@libsql/isomorphic-ws@0.1.5':
     resolution: {integrity: sha512-DtLWIH29onUYR00i0GlQ3UdcTRC6EP4u9w/h9LxpUZJWRMARk6dQwZ6Jkd+QdwVpuAOrdxt18v0K2uIYR3fwFg==}
@@ -2325,10 +2312,13 @@ packages:
   '@rudderjs/notification@1.0.0':
     resolution: {integrity: sha512-buTB82q32cD5mgBKa6njKQdPiyaRi+oxDXn+RZUhcn359krQfI9mbrdljnH9Ry8vSOa46BTr5NAGtkV5+vUUzQ==}
 
-  '@rudderjs/orm-prisma@1.1.0':
-    resolution: {integrity: sha512-CKjtO8/SlDFOUh310SiAa8uXENf5v6CDCWOLDBjBsay4wWizt613IUXDciymjOyCSheJAq39OcYBEb3MkFDQwg==}
+  '@rudderjs/orm-prisma@1.2.0':
+    resolution: {integrity: sha512-Jbr/vWODPo/rGXA2JzaEqFaLeWvQu8IanUOwuEnGbEwBgiACizi/FJhMfM3zJTM/1EafCsdVZG0BxT8uJnqf8w==}
     peerDependencies:
       '@prisma/client': ^7.0.0
+    peerDependenciesMeta:
+      '@prisma/client':
+        optional: true
 
   '@rudderjs/orm@1.3.0':
     resolution: {integrity: sha512-tMqKCcR8DZf3252KvNZBdj8pL+u5zZbVSXo/uSJ8/7wvGWN7/Q+GC1DG7cpcuMi0mCpAikqi2iy/WkCgAP3fLQ==}
@@ -6120,18 +6110,6 @@ snapshots:
 
   '@kurkle/color@0.3.4': {}
 
-  '@libsql/client@0.15.15':
-    dependencies:
-      '@libsql/core': 0.15.15
-      '@libsql/hrana-client': 0.7.0
-      js-base64: 3.7.8
-      libsql: 0.5.29
-      promise-limit: 2.7.0
-    transitivePeerDependencies:
-      - bufferutil
-      - utf-8-validate
-    optional: true
-
   '@libsql/client@0.17.3':
     dependencies:
       '@libsql/core': 0.17.3
@@ -6142,11 +6120,6 @@ snapshots:
     transitivePeerDependencies:
       - bufferutil
       - utf-8-validate
-
-  '@libsql/core@0.15.15':
-    dependencies:
-      js-base64: 3.7.8
-    optional: true
 
   '@libsql/core@0.17.3':
     dependencies:
@@ -6165,20 +6138,6 @@ snapshots:
     transitivePeerDependencies:
       - bufferutil
       - utf-8-validate
-
-  '@libsql/hrana-client@0.7.0':
-    dependencies:
-      '@libsql/isomorphic-fetch': 0.3.1
-      '@libsql/isomorphic-ws': 0.1.5
-      js-base64: 3.7.8
-      node-fetch: 3.3.2
-    transitivePeerDependencies:
-      - bufferutil
-      - utf-8-validate
-    optional: true
-
-  '@libsql/isomorphic-fetch@0.3.1':
-    optional: true
 
   '@libsql/isomorphic-ws@0.1.5':
     dependencies:
@@ -7425,17 +7384,17 @@ snapshots:
       '@rudderjs/mail': 1.0.0
       '@rudderjs/orm': 1.3.0
 
-  '@rudderjs/orm-prisma@1.1.0(@prisma/client@7.8.0(prisma@7.8.0(@types/react-dom@19.2.3(@types/react@19.2.14))(@types/react@19.2.14)(better-sqlite3@12.9.0)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)(typescript@5.9.3))(typescript@5.9.3))':
+  '@rudderjs/orm-prisma@1.2.0(@prisma/client@7.8.0(prisma@7.8.0(@types/react-dom@19.2.3(@types/react@19.2.14))(@types/react@19.2.14)(better-sqlite3@12.9.0)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)(typescript@5.9.3))(typescript@5.9.3))':
     dependencies:
-      '@prisma/client': 7.8.0(prisma@7.8.0(@types/react-dom@19.2.3(@types/react@19.2.14))(@types/react@19.2.14)(better-sqlite3@12.9.0)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)(typescript@5.9.3))(typescript@5.9.3)
       '@rudderjs/contracts': 1.1.0
       '@rudderjs/core': 1.0.0
       '@rudderjs/orm': 1.3.0
     optionalDependencies:
-      '@libsql/client': 0.15.15
+      '@libsql/client': 0.17.3
       '@prisma/adapter-better-sqlite3': 7.8.0
       '@prisma/adapter-libsql': 7.8.0
       '@prisma/adapter-pg': 7.8.0
+      '@prisma/client': 7.8.0(prisma@7.8.0(@types/react-dom@19.2.3(@types/react@19.2.14))(@types/react@19.2.14)(better-sqlite3@12.9.0)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)(typescript@5.9.3))(typescript@5.9.3)
       better-sqlite3: 12.9.0
       pg: 8.20.0
     transitivePeerDependencies:
