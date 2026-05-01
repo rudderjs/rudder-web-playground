@@ -1,6 +1,7 @@
 import { resolve } from 'node:path'
 import { Env } from '@rudderjs/core'
 import { PrismaClient } from '../prisma/generated/prisma/client.js'
+import { isWebContainer } from '../src/runtime/webcontainer.js'
 
 // Uses Prisma's libSQL driver adapter (via @prisma/adapter-libsql +
 // @libsql/client) instead of better-sqlite3. The libSQL adapter is pure JS,
@@ -15,13 +16,16 @@ import { PrismaClient } from '../prisma/generated/prisma/client.js'
 // Run `pnpm exec prisma generate` after schema changes to regenerate the
 // client at the configured output path.
 //
-// libSQL's `file:` URL parser doesn't always resolve `./` relative paths
-// the same way SQLite does — it failed with SQLITE_CANTOPEN inside
-// WebContainer/StackBlitz. Resolve to an absolute path against process.cwd()
-// (project root, since dev/build are launched from there) so the form is
-// unambiguous on every platform.
+// In WebContainer (StackBlitz/Bolt), @libsql/client gets swapped to its
+// WASM build because WASI-Node can't load the native binding. That WASM
+// build runs SQLite via Emscripten, whose virtual filesystem can't see
+// host files at any path — `file:./...`, absolute paths, all fail with
+// SQLITE_CANTOPEN. So in WebContainer we use `:memory:` and SeedDbProvider
+// applies prisma/dev.sql on boot. Outside WebContainer we keep the
+// pre-pushed dev.db file so the demo has persistence locally.
 
-const dbPath = resolve(process.cwd(), 'prisma/dev.db')
+const localDbPath = resolve(process.cwd(), 'prisma/dev.db')
+const defaultUrl = isWebContainer() ? ':memory:' : `file:${localDbPath}`
 
 export default {
   default: Env.get('DB_CONNECTION', 'libsql'),
@@ -31,12 +35,12 @@ export default {
   connections: {
     libsql: {
       driver: 'libsql' as const,
-      url:    Env.get('DATABASE_URL', `file:${dbPath}`),
+      url:    Env.get('DATABASE_URL', defaultUrl),
     },
 
     sqlite: {
       driver: 'sqlite' as const,
-      url:    Env.get('DATABASE_URL', `file:${dbPath}`),
+      url:    Env.get('DATABASE_URL', defaultUrl),
     },
 
     postgresql: {
